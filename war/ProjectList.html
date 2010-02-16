@@ -1,0 +1,12 @@
+<html>
+<body>
+<div>
+<p>Pick your project to display</p>
+<ul>
+@Repeat(items=spreadsheets, var="sheet")
+<li><a href="/report/${sheet.title.plainText}/${__page.token}">${sheet.title.plainText}</a></li>
+</ul>
+
+</div>
+</body>
+</html>
